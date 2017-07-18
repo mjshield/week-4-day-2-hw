@@ -1,0 +1,9 @@
+<h1>All the pizzas!</h1>
+
+<% @pizzas.each do |pizza| %>
+
+  <p>Name: <%= pizza.pretty_name %></p>
+  <P>Order: <%= pizza.quantity%> x <%= pizza.topping %></P>
+  <p><a href="/pizzas/<%= pizza.id%>">Details</a></p>
+  <hr/>
+<% end %>
